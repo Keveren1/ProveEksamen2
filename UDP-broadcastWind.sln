@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDP-broadcastWind", "UDP-broadcastWind.csproj", "{54FDC994-D907-487C-B483-2031EF3AC5C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDPBroadcastReceiver", "..\UDPBroadcastReceiver\UDPBroadcastReceiver.csproj", "{AB4326F8-1B01-45DE-ABA9-4FC045854D2D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VindMålingAPI", "..\VindMålingAPI\VindMålingAPI.csproj", "{BD506ED3-A94C-460A-A7D9-21B94AD09918}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54FDC994-D907-487C-B483-2031EF3AC5C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54FDC994-D907-487C-B483-2031EF3AC5C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54FDC994-D907-487C-B483-2031EF3AC5C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54FDC994-D907-487C-B483-2031EF3AC5C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB4326F8-1B01-45DE-ABA9-4FC045854D2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB4326F8-1B01-45DE-ABA9-4FC045854D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB4326F8-1B01-45DE-ABA9-4FC045854D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB4326F8-1B01-45DE-ABA9-4FC045854D2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD506ED3-A94C-460A-A7D9-21B94AD09918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD506ED3-A94C-460A-A7D9-21B94AD09918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD506ED3-A94C-460A-A7D9-21B94AD09918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD506ED3-A94C-460A-A7D9-21B94AD09918}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81509775-C07D-437A-B5B1-4C395171E9E2}
+	EndGlobalSection
+EndGlobal
