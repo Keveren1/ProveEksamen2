@@ -12,35 +12,15 @@ namespace UDP_broadcastWind
     {
         static void Main(string[] args)
         {
-            string[] Directions = { "N", "NE", "E", "SE", "S", "SW", "W", "NW" };
-            int _speed = 6;
-            int _direction = 0;
-            Random _ran = new Random();
-            string vindhastighed;
-            int vindretning;
-
-            int NextSpeed()
-            {
-                _speed += _ran.Next(-1, 2);
-                if (_speed < 0) _speed = 0;
-                return _speed;
-            }
-
-            string NextDirection()
-            {
-                _direction += _ran.Next(-1, 2);
-                if (_direction == -1) _direction = 7;
-                if (_direction == 8) _direction = 0;
-                return Directions[_direction];
-            }
-
-
             int nextTest = 1;
             Console.WriteLine("UDP Client");
 
 
             using (UdpClient socket = new UdpClient())
             {
+                WindDataGenerator dataGenerator = new WindDataGenerator();
+                dataGenerator.VindHastighed = dataGenerator.NextSpeed();
+                dataGenerator.VindRetning = dataGenerator.NextDirection();
                 while (true)
                 {
                     string sensorName = "UDPTest" + nextTest++;
@@ -48,8 +28,8 @@ namespace UDP_broadcastWind
                     WindDataGenerator sensorData = new WindDataGenerator()
                     {
 
-                        VindHastighed = NextSpeed(),
-                        VindRetning = NextDirection()
+                        VindHastighed = dataGenerator.NextSpeed(),
+                        VindRetning = dataGenerator.NextDirection()
                     };
 
                     string message = JsonSerializer.Serialize(sensorData);
